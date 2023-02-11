@@ -39,4 +39,45 @@
         <item>Yarda cubica</item>
     </string-array>
 
+    <string-array name="Longitud">
+        <item>Kilometro</item>
+        <item>Metro</item>
+        <item>Centimetro</item>
+        <item>Milimetro</item>
+        <item>Nanometro</item>
+        <item>Milla</item>
+        <item>Yarda</item>
+        <item>Pie</item>
+        <item>Pulgada</item>
+        <item>Milla Nautica</item>
+    </string-array>
+
+
+
+    <string-array name="tranferencia">
+    <item>Bit por segundo</item>
+    <item>Kilobit por segundo</item>
+    <item>Kilobyte por segundo</item>
+    <item>Megabit por segundo</item>
+    <item>Megabyte por segundo</item>
+    <item>Gigabit por segundo</item>
+    <item>Gigabyte por segundo</item>
+    <item>Terabit por segundo</item>
+    <item>Terabyte por segundo</item>
+    <item>Tebibit por segundo</item>
+    </string-array>
+
+    <string-array name="Tiempo">
+        <item>Minuto</item>
+        <item>Segundo</item>
+        <item>Dia</item>
+        <item>Milisegundo</item>
+        <item>Semana</item>
+        <item>Mes</item>
+        <item>Año</item>
+        <item>Siglo</item>
+        <item>Decada</item>
+        <item>Hora</item>
+    </string-array>
+
 </resources>

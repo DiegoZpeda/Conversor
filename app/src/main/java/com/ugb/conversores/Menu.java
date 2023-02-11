@@ -1,6 +1,7 @@
 package com.ugb.conversores;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,6 +33,27 @@ Button btnmon, btnmasa, btnvol, btnlong, btnalma, btntiemp, btntdd;
           @Override
           public void onClick(View view) {
               startActivity(new Intent(getApplicationContext(),Volumen.class));
+          }
+      });
+      btnlong=findViewById(R.id.btnlong);
+      btnlong.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              startActivity((new Intent(getApplicationContext(),Longitud.class)));
+          }
+      });
+      btntiemp=findViewById(R.id.btntiemp);
+      btntiemp.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              startActivity(new Intent(getApplicationContext(),Tiempo.class));
+          }
+      });
+      btntdd=findViewById(R.id.btntdd);
+      btntdd.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              startActivity(new Intent(getApplicationContext(),Tranferencia_datos.class));
           }
       });
 
