@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Conversores</string>
+    <string-array name="monedas">
+        <item>Dolar</item>
+        <item>Quetzal</item>
+        <item>Lempira</item>
+        <item>Cordoba</item>
+        <item>Peso CR</item>
+        <item>Colon SV</item>
+        <item>Euro</item>
+        <item>Yenes</item>
+        <item>Rupias</item>
+        <item>Libras</item>
+    </string-array>
+
+    <string-array name="almacenamiento">
+        <item>Bit</item>
+        <item>Megabit</item>
+        <item>Terabit</item>
+        <item>Petabit</item>
+        <item>Byte</item>
+        <item>Kilobyte</item>
+        <item>Megabyte</item>
+        <item>Gigabyte</item>
+        <item>Terabyte</item>
+        <item>Petabyte</item>
+
+    </string-array>
+    <string-array name="volumen">
+        <item>Mililitro</item>
+        <item>Decilitro</item>
+        <item>Litro</item>
+        <item>Milimetro cubico</item>
+        <item>Centilitro</item>
+        <item>Decimetro cubico</item>
+        <item>Metro cubico</item>
+        <item>Pies cubico</item>
+        <item>Pulgada cubica</item>
+        <item>Yarda cubica</item>
+    </string-array>
+
+</resources>
