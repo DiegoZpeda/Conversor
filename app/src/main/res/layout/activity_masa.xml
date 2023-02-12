@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tranferencia_datos">
+    tools:context=".Masa">
 
     <TextView
         android:id="@+id/lblde"
@@ -30,7 +30,7 @@
         android:layout_marginTop="160dp"
         android:layout_marginRight="10dp"
         android:ems="10"
-        android:hint="Cantidad por segundo"
+        android:hint="Cantidad"
         android:inputType="number" />
 
     <Spinner
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="40dp"
-        android:entries="@array/tranferencia" />
+        android:entries="@array/Masa" />
 
     <Spinner
         android:id="@+id/spna"
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="100dp"
-        android:entries="@array/tranferencia" />
+        android:entries="@array/Masa" />
 
     <Button
         android:id="@+id/btnConvertir"
@@ -64,5 +64,5 @@
         android:layout_below="@id/btnConvertir"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="40dp"
-        android:text="Respuesta: S?" />
+        android:text="Respuesta: ?" />
 </RelativeLayout>

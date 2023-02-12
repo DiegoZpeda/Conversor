@@ -8,16 +8,16 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class Longitud extends AppCompatActivity {
+public class Masa extends AppCompatActivity {
     Button btn;
     TextView temp;
     Spinner spn;
-    conversorLongitud miConversor2 = new conversorLongitud();
-
+    conversoresmasa miConversor6 = new conversoresmasa();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_longitud);
+        setContentView(R.layout.activity_masa);
+
         btn = findViewById(R.id.btnConvertir);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,18 +32,22 @@ public class Longitud extends AppCompatActivity {
                 int a = spn.getSelectedItemPosition();
 
                 temp = findViewById(R.id.lblrespuesta);
-                temp.setText("Respuesta: "+ miConversor2.convertir(0, de, a, cantidad));
+                temp.setText("Respuesta: "+ miConversor6.convertir(0, de, a, cantidad));
+
+
+
+
             }
         });
+
     }
 }
-class conversorLongitud{
-    double[][] valores3 = {
-
-            {0.001, 1, 100, 1000, 1e+9, 0.000621371, 1.09361296, 3.28084, 39.3701, 0.000539957}//Longitud
+class conversoresmasa{
+    double[][] valores7 = {
+            {0.001, 1, 1000, 1e+6, 1e+9, 0.000984207, 0.00110231, 2.20462, 35.274, 0.157473},//masa
 
     };
     public double convertir(int opcion, int de, int a, double cantidad){
-        return valores3[opcion][a] / valores3[opcion][de] * cantidad;
+        return valores7[opcion][a] / valores7[opcion][de] * cantidad;
     }
 }

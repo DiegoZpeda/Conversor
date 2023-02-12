@@ -57,6 +57,14 @@ Button btnmon, btnmasa, btnvol, btnlong, btnalma, btntiemp, btntdd;
           }
       });
 
+      btnmasa=findViewById(R.id.btnmasa);
+      btnmasa.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              startActivity(new Intent(getApplicationContext(),Masa.class));
+          }
+      });
+
 
     }
 }

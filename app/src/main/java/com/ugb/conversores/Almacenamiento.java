@@ -12,7 +12,7 @@ public class Almacenamiento extends AppCompatActivity {
     Button btn;
     TextView temp;
     Spinner spn;
-    conversores miConversor = new conversores();
+    conversoralmacenamiento miConversor1 = new conversoralmacenamiento();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,19 +31,19 @@ public class Almacenamiento extends AppCompatActivity {
                 int a = spn.getSelectedItemPosition();
 
                 temp = findViewById(R.id.lblrespuesta);
-                temp.setText("Respuesta: "+ miConversor.convertir(0, de, a, cantidad));
+                temp.setText("Respuesta: "+ miConversor1.convertir(0, de, a, cantidad));
             }
         });
     }
 
 }
 class conversoralmacenamiento{
-    double[][] valores = {
-            {1, 0.001, 1e-6, 1e-9, 1e-12, 1e-15, 0.93, 130.54, 82.52, 0.82},//almacenamiento
+    double[][] valores2 = {
+            {8, 8e-6, 8e-12, 8e-12, 1, 0.001, 1e-6, 1e-9, 1e-12, 1e-15},//Almacenamiento
 
 
     };
     public double convertir(int opcion, int de, int a, double cantidad){
-        return valores[opcion][a] / valores[opcion][de] * cantidad;
+        return valores2[opcion][a] / valores2[opcion][de] * cantidad;
     }
 }

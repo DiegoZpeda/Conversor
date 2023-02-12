@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Conversores"
         tools:targetApi="31">
         <activity
+            android:name=".Masa"
+            android:exported="false" />
+        <activity
             android:name=".Tranferencia_datos"
             android:exported="false" />
         <activity

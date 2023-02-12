@@ -13,7 +13,7 @@ public class Volumen extends AppCompatActivity {
     Button btn;
     TextView temp;
     Spinner spn;
-    conversores miConversor = new conversores();
+    conversorvolumen miConversor5 = new conversorvolumen();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,17 +32,17 @@ public class Volumen extends AppCompatActivity {
                 int a = spn.getSelectedItemPosition();
 
                 temp = findViewById(R.id.lblrespuesta);
-                temp.setText("Respuesta: "+ miConversor.convertir(0, de, a, cantidad));
+                temp.setText("Respuesta: "+ miConversor5.convertir(0, de, a, cantidad));
             }
         });
     }
 }
 class conversorvolumen{
-    double[][] valores = {
-            {1, 0.01, 0.0010, 1000, 0.1, 0.001, 0.000001, 0.000353147, 0.0610237441, 0.0000100  },//Volumen
+    double[][] valores6 = {
+            {1, 0.01, 0.0010, 1000, 0.1, 0.001, 0.000001, 0.000353147, 0.0610237441, 0.0000100},//Volumen
 
     };
-    public double conversorvolumen(int opcion, int de, int a, double cantidad){
-        return valores[opcion][a] / valores[opcion][de] * cantidad;
+    public double convertir(int opcion, int de, int a, double cantidad){
+        return valores6[opcion][a] / valores6[opcion][de] * cantidad;
     }
 }
